@@ -48,20 +48,19 @@ The notebook will automatically download the dataset on first run.
 5. **Evaluation** — Hold-out test set metrics + 5-fold cross-validation
 6. **Symptom Importance** — Measures how toggling each risk factor affects the best model's predictions
 
+
 ## Results
 
-| Model | Accuracy | Precision | Recall | F1 | ROC-AUC |
-|---|---|---|---|---|---|
-| **SVM** ✅ | 0.9879 | 0.9826 | 0.9845 | 0.9835 | 0.9995 |
-| Logistic Regression | — | — | — | — | — |
-| KNN | — | — | — | — | — |
-| Decision Tree | — | — | — | — | — |
-| Naïve Bayes | — | — | — | — | — |
-
-*Full metrics are printed in the notebook output after running.*
+| Rank | Model | Accuracy | Precision | Recall | F1 | ROC-AUC |
+|---|---|---|---|---|---|---|
+| 1 | **SVM** ✅ | 0.9879 | 0.9826 | 0.9845 | 0.9835 | 0.9995 |
+| 2 | Logistic Regression | 0.9796 | 0.9688 | 0.9759 | 0.9724 | 0.9984 |
+| 3 | KNN | 0.9263 | 0.9332 | 0.8615 | 0.8959 | 0.9850 |
+| 4 | Naive Bayes | 0.8869 | 0.7972 | 0.9290 | 0.8581 | 0.9645 |
+| 5 | Decision Tree | 0.8947 | 0.9163 | 0.7858 | 0.8460 | 0.9547 |
 
 ## Key Findings
 
 - **SVM was the best model** — the RBF kernel effectively captured the nonlinear relationship between features and stroke risk
 - **Cross-validation scores matched holdout scores**, confirming the model generalizes well and is not overfit
-- **High blood pressure** was the strongest single risk factor, raising the model's predicted stroke probability by ~29 percentage points when present (relative importance ≈ 17.5%)Sonnet 4.6C
+- **High blood pressure** was the strongest single risk factor, raising the model's predicted stroke probability by ~29 percentage points when present (relative importance ≈ 17.5%)Sonnet 4.6
