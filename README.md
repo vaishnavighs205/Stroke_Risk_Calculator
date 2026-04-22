@@ -4,26 +4,6 @@ Use supervised machine learning to determine the weight of multiple symptoms and
 ## Dataset
 **Source:** [Stroke Risk Prediction Dataset v2](https://www.kaggle.com/datasets/mahatiratusher/stroke-risk-prediction-dataset-v2) (Kaggle — downloaded automatically at runtime via `kagglehub`)
 
-> ⚠️ This is a *synthetic* dataset created for educational purposes. Results should not be used for real clinical decision-making.
-
-## Setup
-
-### 1. Clone the repository
-```bash
-git clone https://github.com//stroke-risk-analysis.git
-cd stroke-risk-analysis
-```
-
-### 2. Install dependencies
-```bash
-pip install kagglehub numpy pandas matplotlib scikit-learn
-```
-
-### 3. Kaggle API credentials (required for dataset download)
-1. Go to [kaggle.com/settings](https://www.kaggle.com/settings) → **API** → **Create New Token**
-2. Place the downloaded `kaggle.json` at `~/.kaggle/kaggle.json`
-3. Run `chmod 600 ~/.kaggle/kaggle.json` (macOS/Linux only)
-
 ## How to Run
 
 Open `stroke_risk_analysis.ipynb` in Jupyter and run all cells:
