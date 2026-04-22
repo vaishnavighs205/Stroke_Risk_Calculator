@@ -63,4 +63,4 @@ The notebook will automatically download the dataset on first run.
 
 - **SVM was the best model** — the RBF kernel effectively captured the nonlinear relationship between features and stroke risk
 - **Cross-validation scores matched holdout scores**, confirming the model generalizes well and is not overfit
-- **High blood pressure** was the strongest single risk factor, raising the model's predicted stroke probability by ~29 percentage points when present (relative importance ≈ 17.5%)Sonnet 4.6
+- **High blood pressure** was the strongest single risk factor, raising the model's predicted stroke probability by ~29 percentage points when present (relative importance ≈ 17.5%)
